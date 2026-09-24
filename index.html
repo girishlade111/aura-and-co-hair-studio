@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Defensive shim: Prevent "Cannot set property fetch of #<Window> which has only a getter"
+      // Ensures window.fetch provides a setter for scripts/polyfills attempting assignment
+      (function() {
+        try {
+          var originalFetch = window.fetch ? window.fetch.bind(window) : null;
+          var activeFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return activeFetch || originalFetch;
+            },
+            set: function(fn) {
+              activeFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            var proto = Object.getPrototypeOf(window);
+            if (proto) {
+              var protoFetch = proto.fetch ? proto.fetch.bind(window) : null;
+              var activeProtoFetch = protoFetch;
+              Object.defineProperty(proto, 'fetch', {
+                get: function() {
+                  return activeProtoFetch || protoFetch;
+                },
+                set: function(fn) {
+                  activeProtoFetch = fn;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (e2) {}
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura & Co. Hair Studio | Where hair becomes art | Pune, India</title>
+    <meta name="description" content="Pune's premier bespoke hair salon & luxury aesthetic studio. Precision styling, balayage, keratin treatments, bridal couture, and bespoke hair wellness." />
+    <meta property="og:title" content="Aura & Co. Hair Studio | Where hair becomes art" />
+    <meta property="og:description" content="Pune's premier bespoke hair salon & luxury aesthetic studio. Precision styling, balayage, keratin treatments, bridal couture, and bespoke hair wellness." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Aura & Co. Hair Studio",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+      "description": "Where hair becomes art. Pune's premier luxury salon and aesthetic atelier.",
+      "telephone": "+91 98230 45678",
+      "priceRange": "₹₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lane 7, Koregaon Park",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5362,
+        "longitude": 73.8940
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "20:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "840"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-[#F6F1EA] text-[#1B1512] antialiased selection:bg-[#B8935A]/30 selection:text-[#1B1512]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

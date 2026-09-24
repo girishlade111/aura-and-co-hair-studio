@@ -1,0 +1,115 @@
+/**
+ * Centralised high-res Unsplash imagery with warm editorial color grade.
+ * Swap these URLs anytime with client photography.
+ */
+
+export const salonImages = {
+  hero: {
+    main: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=85",
+    secondary: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+    accent: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80",
+  },
+  interior: {
+    salonWide: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80",
+    stylingStation: "https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1200&q=80",
+    washLounge: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80",
+    reception: "https://images.unsplash.com/photo-1620331311520-246422fd82f9?auto=format&fit=crop&w=1200&q=80",
+  },
+  categories: {
+    cuts: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80",
+    color: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80",
+    keratin: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+    spa: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80",
+    bridal: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80",
+    mens: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80",
+    curls: "https://images.unsplash.com/photo-1523263685509-57c1421938bf?auto=format&fit=crop&w=800&q=80",
+  },
+  stylists: {
+    aarav: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+    ananya: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+    rohit: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    meera: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80",
+    karan: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+    tanya: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80",
+  },
+  beforeAfter: {
+    before1: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=900&q=80",
+    after1: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=80",
+    before2: "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=900&q=80",
+    after2: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80",
+  },
+  products: {
+    elixir: "https://images.unsplash.com/photo-1608248597359-2e11894d0752?auto=format&fit=crop&w=600&q=80",
+    mask: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80",
+    shampoo: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=600&q=80",
+    serum: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80",
+    mist: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80",
+    scrub: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+  },
+  gallery: [
+    {
+      id: "gal-1",
+      url: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80",
+      title: "French Balayage & Silk Finish",
+      category: "Color",
+      stylist: "Aarav Kapoor",
+      span: "tall",
+    },
+    {
+      id: "gal-2",
+      url: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80",
+      title: "Precision Butterfly Cut",
+      category: "Cuts",
+      stylist: "Meera Joshi",
+      span: "normal",
+    },
+    {
+      id: "gal-3",
+      url: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80",
+      title: "Heritage Royal Bridal Coiffure",
+      category: "Bridal",
+      stylist: "Ananya Deshmukh",
+      span: "tall",
+    },
+    {
+      id: "gal-4",
+      url: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80",
+      title: "Executive Taper & Beard Sculpt",
+      category: "Men",
+      stylist: "Rohit Kadam",
+      span: "normal",
+    },
+    {
+      id: "gal-5",
+      url: "https://images.unsplash.com/photo-1523263685509-57c1421938bf?auto=format&fit=crop&w=900&q=80",
+      title: "Botanical Curl Definition & Gloss",
+      category: "Curls",
+      stylist: "Tanya Sen",
+      span: "normal",
+    },
+    {
+      id: "gal-6",
+      url: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=80",
+      title: "Hazelnut Honey Dimensional Melt",
+      category: "Color",
+      stylist: "Aarav Kapoor",
+      span: "wide",
+    },
+    {
+      id: "gal-7",
+      url: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80",
+      title: "Architectural Italian Bob",
+      category: "Cuts",
+      stylist: "Meera Joshi",
+      span: "normal",
+    },
+    {
+      id: "gal-8",
+      url: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80",
+      title: "Golden Hour Waves & Velvet Texture",
+      category: "Color",
+      stylist: "Karan Malhotra",
+      span: "tall",
+    },
+  ],
+};
