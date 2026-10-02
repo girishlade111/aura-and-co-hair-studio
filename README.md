@@ -341,6 +341,12 @@ Please keep the design system intact: reuse tokens from `config/site.ts` and `sr
 
 ---
 
+## Credits
+
+Built by Girish Lade — [ladestack.in](https://ladestack.in)
+
+---
+
 ## License
 
 MIT © Aura & Co. Hair Studio — demo project for portfolio/client-pitch use.

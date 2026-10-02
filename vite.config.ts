@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: "/aura-and-co-hair-studio/",
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: [
