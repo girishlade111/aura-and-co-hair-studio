@@ -1,6 +1,0 @@
-{
-  "name": "Aura & Co. Hair Studio",
-  "description": "Pune's premier bespoke hair salon & luxury aesthetic studio. Precision styling, balayage, keratin treatments, bridal couture, and bespoke hair wellness.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
